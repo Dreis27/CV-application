@@ -1,13 +1,12 @@
 
 
-function InputField({
-    id, 
-    placeholder, 
-    type, 
-    labelText, 
-    onChange, 
+export default function InputField({
+    id,
+    placeholder,
+    type,
+    labelText,
+    onChange,
     value,
-    "data-key": dataKey,
 }) {
     return (
         <div className="input-field">
@@ -16,12 +15,11 @@ function InputField({
             </label>
 
             {type === "textarea" ? (
-                <textarea 
+                <textarea
                     id={id}
                     placeholder={placeholder}
                     onChange={onChange}
                     value={value}
-                    data-key={dataKey}
                 ></textarea>
             ) : (
                 <input 
@@ -30,11 +28,8 @@ function InputField({
                     placeholder={placeholder}
                     onChange={onChange}
                     value={value}
-                    data-key={dataKey}
                 />
             )}
         </div>
-    );
+    )
 }
-
-export default InputField;
