@@ -7,7 +7,8 @@ export default function DisplayForms ({
     onRemove,
     toggleCollapsed,
     onDelete,
-    titleKey
+    titleKey,
+    FormComponent
 }) {
     return (
         <div className="forms-container">
@@ -21,7 +22,14 @@ export default function DisplayForms ({
                         onDelete={onDelete}
                     />
                 ) : (
-                    <FormComponent/>
+                    <FormComponent
+                        onChange={onChange}
+                        form={form}
+                        key={form.id}
+                        onCancel={onCancel}
+                        onRemove={onRemove}
+                        onSave={toggleCollapsed}
+                    />
 
                 )
             )}
