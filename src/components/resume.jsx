@@ -1,6 +1,6 @@
 import PersonalInfoSection from "./personal-info/personalInfoSection";
 import EducationInfoSection from "./education/educationInfoSection";
-import ExperienceInfoSection from "./experience/ExperienceInfoSection";
+import ExperienceInfoSection from "./experience/experienceInfoSection";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 export default function Resume({personalInfo, sections}) {
