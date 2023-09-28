@@ -1,4 +1,5 @@
 import InputField from "../inputField";
+import Buttons from "../buttons";
 
 export default function EducationForm({props}) {
     const {school, degree, startDate, endDate, location, id} = props.form
@@ -54,6 +55,8 @@ export default function EducationForm({props}) {
                 value={location}
                 data-key="location"
             />
+
+            <Buttons onSave={onSave} onCancel={onCancel} onRemove={onRemove} />
         </form>
     )
 }

@@ -11,6 +11,7 @@ export default function PersonalInfo({onChange, fullName, email, phoneNumber, ad
                 labelText='Full name'
                 onChange={onChange}
                 value={fullName}
+                data-key="fullName"
             />   
             <InputField
                 id='email'
@@ -19,6 +20,7 @@ export default function PersonalInfo({onChange, fullName, email, phoneNumber, ad
                 labelText='Email'
                 onChange={onChange}
                 value={email}
+                data-key="email"
             />   
             <InputField
                 id='phone-number'
@@ -27,6 +29,7 @@ export default function PersonalInfo({onChange, fullName, email, phoneNumber, ad
                 labelText='Phone number'
                 onChange={onChange}
                 value={phoneNumber}
+                data-key="phoneNumber"
             />   
             <InputField
                 id='address'
@@ -35,6 +38,7 @@ export default function PersonalInfo({onChange, fullName, email, phoneNumber, ad
                 labelText='Address'
                 onChange={onChange}
                 value={address}
+                data-key="address"
             />   
         </form>
     )

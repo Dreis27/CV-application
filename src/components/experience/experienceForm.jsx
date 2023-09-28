@@ -1,4 +1,5 @@
 import InputField from "../inputField";
+import Buttons from "../buttons";
 
 export default function ExperienceForm({props}) {
     const {companyName, positionTitle, location, description, startDate, endDate, id} = props.form
@@ -64,6 +65,8 @@ export default function ExperienceForm({props}) {
                 onChange={onChange}
                 data-key="description"
             />
+
+            <Buttons onSave={onSave} onCancel={onCancel} onRemove={onRemove} />
         </form>
     )
 }

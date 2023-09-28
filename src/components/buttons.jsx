@@ -7,6 +7,7 @@ export default function Buttons ({onCancel, onSave, onRemove}) {
                 <i className="fa-solid fa-trash" />
                 Delete
             </button>
+            
             <div className="main-buttons">
                 <button className="cancel" onClick={onCancel} type="button">
                     Cancel
