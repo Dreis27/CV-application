@@ -17,6 +17,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter company name"
                 value={companyName}
                 onChange={onChange}
+                data-key="companyName"
             />
             <InputField
                 type="text"
@@ -25,6 +26,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter position title"
                 value={positionTitle}
                 onChange={onChange}
+                data-key="positionTitle"
             />
             <InputField
                 type="text"
@@ -33,6 +35,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter start date"
                 value={startDate}
                 onChange={onChange}
+                data-key="startDate"
             />
             <InputField
                 type="text"
@@ -41,6 +44,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter end date"
                 value={endDate}
                 onChange={onChange}
+                data-key="endDate"
             />
             <InputField
                 type="text"
@@ -49,6 +53,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter location"
                 value={location}
                 onChange={onChange}
+                data-key="location"
             />
             <InputField
                 type="textarea"
@@ -57,6 +62,7 @@ export default function ExperienceForm({props}) {
                 placeholder="Enter description"
                 value={description}
                 onChange={onChange}
+                data-key="description"
             />
         </form>
     )

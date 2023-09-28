@@ -16,6 +16,7 @@ export default function EducationForm({props}) {
                 labelText='School'
                 onChange={onChange}
                 value={school}
+                data-key="schoolName"
             />
             <InputField
                 id='degree'
@@ -24,6 +25,7 @@ export default function EducationForm({props}) {
                 labelText='Degree'
                 onChange={onChange}
                 value={degree}
+                data-key="degree"
             />
             <InputField
                 id='start-date'
@@ -32,6 +34,7 @@ export default function EducationForm({props}) {
                 labelText='Start Date'
                 onChange={onChange}
                 value={startDate}
+                data-key="startDate"
             />
             <InputField
                 id='end-date'
@@ -40,6 +43,7 @@ export default function EducationForm({props}) {
                 labelText='End Date'
                 onChange={onChange}
                 value={endDate}
+                data-key="endDate"
             />
             <InputField
                 id='location'
@@ -48,6 +52,7 @@ export default function EducationForm({props}) {
                 labelText='Location'
                 onChange={onChange}
                 value={location}
+                data-key="location"
             />
         </form>
     )
