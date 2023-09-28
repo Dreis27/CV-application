@@ -5,7 +5,7 @@ export default function EducationForm({props}) {
     const {onChange, onSave, onRemove, onCancel} = props
     return (
         <form 
-            className="education-form"
+            className="education-form section-form"
             id={id}
             onSubmit={(e) => e.preventDefault()}    
         >
