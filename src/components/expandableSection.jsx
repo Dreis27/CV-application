@@ -1,4 +1,4 @@
-
+import "../styles/expandableSection.css";
 
 export default function ExpandableSection({sectionName, isOpen, setOpen}) {
     return (

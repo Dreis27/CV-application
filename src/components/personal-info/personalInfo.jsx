@@ -1,6 +1,7 @@
 import InputField from "../inputField";
+import "../../styles/personalInfo.css";
 
-export default function PersonalInfo({onChange, fullName, email, phoneNumber, address}) {
+export default function PersonalInformation({ onChange, fullName, email, phoneNumber, address }) {
     return (
         <form className="personal-info">
             <h2>Personal Info</h2>

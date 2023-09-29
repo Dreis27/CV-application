@@ -2,6 +2,7 @@ import DisplayForms from "../displayForms";
 import ExpandableSection from "../expandableSection";
 import ButtonCreateForm from "../buttonCreateForm";
 import EducationForm from "./educationForm";
+import "../../styles/section.css";
 
 export default function AddEducationSection({
     isOpen,
@@ -15,7 +16,7 @@ export default function AddEducationSection({
     createForm,
 }) {
     return (
-        <div className="add-education-section">
+        <div className="add-education-section section">
             <ExpandableSection
                 sectionName='Education'
                 isOpen={isOpen}
@@ -31,6 +32,7 @@ export default function AddEducationSection({
                     onDelete={onDelete}
                     titleKey='schoolName'
                     FormComponent={EducationForm}
+                    arrayName='educations'
                 />
                 <ButtonCreateForm onClick={createForm} formName="Education"/>
             </div>

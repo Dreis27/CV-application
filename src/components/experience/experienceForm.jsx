@@ -1,22 +1,21 @@
 import InputField from "../inputField";
 import Buttons from "../buttons";
 
-export default function ExperienceForm({props}) {
-    const {companyName, positionTitle, location, description, startDate, endDate, id} = props.form
-    const {onChange, onSave, onRemove, onCancel} = props;
+export default function ExperienceForm({onChange, onSave, onRemove, onCancel, form}) {
 
     return (
         <form
             className="experience-form section-form"
-            id={id}
+            id={form.id}
             onSubmit={(e) => e.preventDefault()}
+            data-array-name="experiences"
         >
             <InputField
                 type="text"
                 id="company-name"
                 labelText="Company Name"
                 placeholder="Enter company name"
-                value={companyName}
+                value={form.companyName}
                 onChange={onChange}
                 data-key="companyName"
             />
@@ -25,7 +24,7 @@ export default function ExperienceForm({props}) {
                 id="position-title"
                 labelText="Position Title"
                 placeholder="Enter position title"
-                value={positionTitle}
+                value={form.positionTitle}
                 onChange={onChange}
                 data-key="positionTitle"
             />
@@ -34,7 +33,7 @@ export default function ExperienceForm({props}) {
                 id="start-date"
                 labelText="Start date"
                 placeholder="Enter start date"
-                value={startDate}
+                value={form.startDate}
                 onChange={onChange}
                 data-key="startDate"
             />
@@ -43,7 +42,7 @@ export default function ExperienceForm({props}) {
                 id="end-date"
                 labelText="End date"
                 placeholder="Enter end date"
-                value={endDate}
+                value={form.endDate}
                 onChange={onChange}
                 data-key="endDate"
             />
@@ -52,7 +51,7 @@ export default function ExperienceForm({props}) {
                 id="location"
                 labelText="Location"
                 placeholder="Enter location"
-                value={location}
+                value={form.location}
                 onChange={onChange}
                 data-key="location"
             />
@@ -61,7 +60,7 @@ export default function ExperienceForm({props}) {
                 id="description"
                 labelText="Description"
                 placeholder="Enter description"
-                value={description}
+                value={form.description}
                 onChange={onChange}
                 data-key="description"
             />

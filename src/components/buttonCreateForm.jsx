@@ -1,4 +1,4 @@
-
+import "../styles/buttonCreateForm.css";
 
 export default function ButtonCreateForm({onClick, formName}) {
     return (

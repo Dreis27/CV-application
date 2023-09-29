@@ -1,4 +1,4 @@
-
+import "../../styles/personalInfoSection.css";
 
 export default function PersonalInfoSection({ email, fullName, phoneNumber, address }){
     return (

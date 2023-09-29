@@ -1,4 +1,4 @@
-
+import "../styles/inputField.css";
 
 export default function InputField({
     id,
@@ -7,6 +7,7 @@ export default function InputField({
     labelText,
     onChange,
     value,
+    "data-key": dataKey,
 }) {
     return (
         <div className="input-field">
@@ -20,6 +21,7 @@ export default function InputField({
                     placeholder={placeholder}
                     onChange={onChange}
                     value={value}
+                    data-key={dataKey}
                 ></textarea>
             ) : (
                 <input 
@@ -28,6 +30,7 @@ export default function InputField({
                     placeholder={placeholder}
                     onChange={onChange}
                     value={value}
+                    data-key={dataKey}
                 />
             )}
         </div>

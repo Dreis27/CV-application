@@ -2,6 +2,7 @@ import DisplayForms from "../displayForms";
 import ExpandableSection from "../expandableSection";
 import ButtonCreateForm from "../buttonCreateForm";
 import ExperienceForm from "./experienceForm";
+import "../../styles/section.css";
 
 export default function AddEducationSection({
     isOpen,
@@ -15,7 +16,7 @@ export default function AddEducationSection({
     createForm,
 }) {
     return (
-        <div className="add-experience-section">
+        <div className="add-experience-section section">
             <ExpandableSection
                 sectionName='Experience'
                 isOpen={isOpen}
@@ -31,6 +32,7 @@ export default function AddEducationSection({
                     onDelete={onDelete}
                     titleKey='companyName'
                     FormComponent={ExperienceForm}
+                    arrayName="experiences"
                 />
                 <ButtonCreateForm onClick={createForm} formName="Experience"/>
             </div>

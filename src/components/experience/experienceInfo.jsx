@@ -1,4 +1,4 @@
-
+import "../../styles/experienceInfo.css";
 
 export default function ExperienceInfo({ info }) {
     return (

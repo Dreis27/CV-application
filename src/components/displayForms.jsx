@@ -8,7 +8,8 @@ export default function DisplayForms ({
     toggleCollapsed,
     onDelete,
     titleKey,
-    FormComponent
+    FormComponent,
+    arrayName
 }) {
     return (
         <div className="forms-container">
@@ -19,6 +20,7 @@ export default function DisplayForms ({
                         key={form.id}
                         form={form}
                         title={form[titleKey]}
+                        arrayName={arrayName}
                         onDelete={onDelete}
                     />
                 ) : (

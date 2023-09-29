@@ -1,13 +1,13 @@
 import InputField from "../inputField";
 import Buttons from "../buttons";
 
-export default function EducationForm({props}) {
-    const {school, degree, startDate, endDate, location, id} = props.form
-    const {onChange, onSave, onRemove, onCancel} = props
+export default function EducationForm({onChange, onSave, onRemove, onCancel, form}) {
+
     return (
         <form 
             className="education-form section-form"
-            id={id}
+            id={form.id}
+            data-array-name="educations"
             onSubmit={(e) => e.preventDefault()}    
         >
             <InputField
@@ -16,7 +16,7 @@ export default function EducationForm({props}) {
                 type='text'
                 labelText='School'
                 onChange={onChange}
-                value={school}
+                value={form.schoolName}
                 data-key="schoolName"
             />
             <InputField
@@ -25,7 +25,7 @@ export default function EducationForm({props}) {
                 type='text'
                 labelText='Degree'
                 onChange={onChange}
-                value={degree}
+                value={form.degree}
                 data-key="degree"
             />
             <InputField
@@ -34,7 +34,7 @@ export default function EducationForm({props}) {
                 type='text'
                 labelText='Start Date'
                 onChange={onChange}
-                value={startDate}
+                value={form.startDate}
                 data-key="startDate"
             />
             <InputField
@@ -43,7 +43,7 @@ export default function EducationForm({props}) {
                 type='text'
                 labelText='End Date'
                 onChange={onChange}
-                value={endDate}
+                value={form.endDate}
                 data-key="endDate"
             />
             <InputField
@@ -52,7 +52,7 @@ export default function EducationForm({props}) {
                 type='text'
                 labelText='Location'
                 onChange={onChange}
-                value={location}
+                value={form.location}
                 data-key="location"
             />
 

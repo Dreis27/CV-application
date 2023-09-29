@@ -1,4 +1,4 @@
-
+import "../styles/buttons.css"
 
 export default function Buttons ({onCancel, onSave, onRemove}) {
     return (

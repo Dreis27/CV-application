@@ -1,11 +1,12 @@
 import { useState } from "react";
-import PersonalInfo from "./components/personal-info/personalInfo";
+import PersonalInformation from "./components/personal-info/personalInfo";
 import AddEducationSection from "./components/education/addEducationSection";
 import AddExperienceSection from "./components/experience/addExperienceSection";
 import Resume from "./components/resume";
 import uniqid from "uniqid";
 import TemplateLoader from "./components/templateLoader";
 import exampleData from "./example-data";
+import "./styles/app.css";
 
 
 export default function App() {
@@ -22,7 +23,7 @@ export default function App() {
     function handleSectionChange(e) {
         const {key} = e.target.dataset;
         const inputValue = e.target.value;
-        const form = e.target.closest('.section=form');
+        const form = e.target.closest('.section-form');
         const {id} = form;
         const {arrayName} = form.dataset;
         const section = sections[arrayName];
@@ -80,22 +81,25 @@ export default function App() {
         })
     }
 
-    function toggleCollapsed(e) {
+    function toggleValue(e, key) {
         const sectionForm = e.target.closest(".section-form");
-        const {id} = sectionForm;
-        const {arrayName} = sectionForm.dataset;
+        const { id } = sectionForm;
+        const { arrayName } = sectionForm.dataset;
         const section = sections[arrayName];
         setSections({
-            ...sections, 
-            [arrayName]: section.map((form) => {
-                if(form.id === id) {
-                    setPrevState(Object.assign({}, form));
-                    form['isCollapsed'] = !form['isCollapsed'];
-                }
-                return form;
-            })
+          ...sections,
+          [arrayName]: section.map((form) => {
+            if (form.id === id) {
+              setPrevState(Object.assign({}, form));
+              form[key] = !form[key];
+            }
+    
+            return form;
+          }),
         });
-    }
+      }
+
+      const toggleCollapsed = (e) => toggleValue(e, "isCollapsed");
 
     const createEducationForm = () => 
         createForm('educations', {
@@ -116,7 +120,7 @@ export default function App() {
             description: '',
             startDate: '',
             endDate: '',
-            isCollapsed: '',
+            isCollapsed: false,
             id: uniqid(),
         });
 
@@ -136,7 +140,7 @@ export default function App() {
                             setPrevState(null);
                         }}
                     />
-                    <PersonalInfo
+                    <PersonalInformation
                         onChange={handlePersonalInfoChange}
                         fullName={personalInfo.fullName}
                         email={personalInfo.email}
