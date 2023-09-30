@@ -1,2 +1,26 @@
+.collapsed-form-btn {
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: white;
+    border: none;
+    border-top: 5px solid rgb(221, 222, 226);
+}
 
+.collapsed-form-btn > p {
+    font-size: 17px;
+}
 
+.collapsed-form-btn > b {
+    color: rgb(128, 122, 122);
+    transition: 0.2s;
+    font-size: 15px;
+    width: 42.5px;
+    padding: 10px;
+}
+
+.collapsed-form-btn > b:hover {
+    color: black;
+}

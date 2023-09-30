@@ -12,12 +12,12 @@ export default function CollapsedForm(props) {
             data-array-name={arrayName}
         >
             <p>{title}</p>
-            <i className="fa-soldi fa-x"
+            <b className="fa-soldi fa-x"
                 onClick={(e) => {
                     e.stopPropagation();
                     onDelete(e);
                 }}
-            ></i>
+            ></b>
         </button>
     )
 }
