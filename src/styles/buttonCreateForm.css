@@ -1,0 +1,19 @@
+.create-form {
+    background-color: transparent;
+    border-radius: 5000px;
+    padding: 0px 15px 0px 15px;
+    border: 2px solid rgb(111, 113, 117);
+    transition: transform 0.3s ease;
+}
+
+.create-form .fa-plus {
+    margin-right: 8px;
+}
+
+.create-form:hover {
+   transform: scale(1.05);
+}
+.button-content {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
