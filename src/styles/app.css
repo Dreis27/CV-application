@@ -2,9 +2,8 @@
     display: flex;
     margin: auto;
     width: 100%;
-
     gap: 24px;
-
+    padding: 20px 35px;
   }
   
   .form-container {
@@ -24,6 +23,4 @@
     height: fit-content;
     flex-wrap: wrap;
     gap: 24px;
-    max-width: 750px;
-    flex-grow: 1;
   }
