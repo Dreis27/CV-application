@@ -1,0 +1,31 @@
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    padding: 0 4px;
+    margin-bottom: 10px;
+}
+
+.buttons button {
+    padding: 8px 16px;
+    border-radius: 8px;
+    border: none;
+    font-family: "NotoSans-bold";
+}
+.delete {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+.cancel,
+.delete {
+  background-color: transparent;
+  outline: 1px solid grey;
+  color: grey;
+  margin-right: 10px;
+}
+.save {
+    background-color: rgb(20, 113, 219);
+    color: white;
+    margin-left: 70px;
+}

@@ -2,7 +2,7 @@ import "../../styles/personalInfoSection.css";
 
 export default function PersonalInfoSection({ email, fullName, phoneNumber, address }){
     return (
-        <div className="personal-info">
+        <div className="personal-info-resume">
             <h1 className="resume-name">{fullName}</h1>
             <div className="contact-info">
                 {address && (

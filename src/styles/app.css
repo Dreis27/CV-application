@@ -1,26 +1,33 @@
+:root {
+  background-color: rgb(231, 236, 240);
+}
+
 .app {
     display: flex;
     margin: auto;
     width: 100%;
     gap: 24px;
     padding: 20px 35px;
-  }
+    max-width: 1500px;
+    justify-content: center;
+}
   
-  .form-container {
+.form-container {
     display: flex;
     flex-direction: column;
     flex-grow: 999;
     gap: 28px;
-  }
+}
   
-  form {
+form {
     padding: 18px;
     border-radius: 12px;
-  }
+}
   
-  .edit-side {
+.edit-side {
     display: flex;
     height: fit-content;
     flex-wrap: wrap;
     gap: 24px;
-  }
+    margin-right: 30px;
+}

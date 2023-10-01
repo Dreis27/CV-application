@@ -1,0 +1,18 @@
+.experience-info {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.experience-info-group {
+    min-width: 150px;
+}
+
+.experience-info-group p {
+    margin: 3px;
+}
+
+.experience-info-companyName {
+    font-weight: bold;
+}
+  
