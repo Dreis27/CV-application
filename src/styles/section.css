@@ -3,6 +3,8 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
+    border-top-right-radius: 12px;
+    border-top-left-radius: 12px;
 }
 .section-content {
     width: 100%;
@@ -14,6 +16,7 @@
     transform: translateY(-25px);
     transform-origin: top;
     height: 0;
+    margin-bottom: 1.5vh;
 }
 .section-content.open {
     transition: opacity, transform, visibility;
