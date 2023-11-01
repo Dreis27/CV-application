@@ -4,6 +4,7 @@
     margin-top: 40px;
     padding: 0 4px;
     margin-bottom: 10px;
+    flex-wrap: wrap;
 }
 
 .buttons button {
@@ -13,19 +14,20 @@
     font-family: "NotoSans-bold";
 }
 .delete {
+    margin-bottom: 1vh;
+    margin-right: 4vw;
     display: flex;
     align-items: center;
-    gap: 6px;
+
 }
 .cancel,
 .delete {
   background-color: transparent;
   outline: 1px solid grey;
   color: grey;
-  margin-right: 10px;
 }
 .save {
     background-color: rgb(20, 113, 219);
     color: white;
-    margin-left: 70px;
+    margin-left: 0.5vw;
 }
