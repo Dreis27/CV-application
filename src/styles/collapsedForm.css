@@ -9,6 +9,10 @@
     border-top: 5px solid rgb(221, 222, 226);
 }
 
+.collapsed-form-btn:last-child{
+    border-bottom: 5px solid rgb(221, 222, 226);
+}
+
 .collapsed-form-btn > p {
     font-size: 17px;
 }

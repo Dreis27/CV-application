@@ -4,6 +4,7 @@
     padding: 0px 15px 0px 15px;
     border: 2px solid rgb(111, 113, 117);
     transition: transform 0.3s ease;
+    margin-top: 1vh;
 }
 
 .create-form .fa-plus {
