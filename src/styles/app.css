@@ -30,4 +30,6 @@ form {
     flex-wrap: wrap;
     gap: 24px;
     margin-right: 30px;
+    margin-left: 0;
+    width: 25vw;
 }
