@@ -28,3 +28,7 @@
 .collapsed-form-btn > b:hover {
     color: black;
 }
+
+.forms-container {
+    width: 100%;
+}

@@ -3,10 +3,7 @@
     flex-direction: column;
     align-items: center;
     background-color: white;
-    border-top-right-radius: 12px;
-    border-top-left-radius: 12px;
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
+    border-radius: 12px;
 }
 .section-content {
     width: 100%;
@@ -30,7 +27,7 @@
     transform: translateY(0);
     height: auto;
     justify-content: center;
-    width: auto;
+    width: 80%;
 }
 .chevron {
     transition: transform 0.3s;
